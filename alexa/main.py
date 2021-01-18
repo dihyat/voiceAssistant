@@ -13,7 +13,6 @@ engine.setProperty('rate',140)
 
 def talk(text):
     engine.say(text)
-
     engine.runAndWait()
 
 def take_command():
@@ -25,8 +24,6 @@ def take_command():
             command = command.lower()
             if 'md' in command:
                 command = command.replace('md','')
-
-
     except:
         pass
     return command
@@ -50,8 +47,6 @@ def run_md():
 
     elif 'joke' in command:
         talk(pyjokes.get_joke())
-
-
     else:
         talk("Sorry I didnt understand")
 
