@@ -49,6 +49,5 @@ def run_md():
         talk(pyjokes.get_joke())
     else:
         talk("Sorry I didnt understand")
-
 while True:
     run_md()
