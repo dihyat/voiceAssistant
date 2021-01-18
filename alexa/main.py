@@ -8,6 +8,7 @@ import pyjokes
 listener = sr.Recognizer()
 engine = pyttsx3.init()
 voices = engine.getProperty('rate')
+#speed of the speech delivery
 engine.setProperty('rate',140)
 
 def talk(text):
