@@ -42,7 +42,7 @@ def run_md():
         talk('Current time is' + time)
 
     elif 'search' in command:
-        person = command.replace("who is","")
+        person = command.replace("search","")
         info = wikipedia.summary(person, 1)
         print(info)
         talk(info)
